@@ -9,6 +9,8 @@ jobs:
         name: First Job
         runs-on: ubuntu-latest
         steps:
+        - name: before checkout
+          run: ls
         - name: step one
           uses: actions/checkout@v3
         - name: ls command 
