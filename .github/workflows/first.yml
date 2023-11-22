@@ -11,6 +11,8 @@ jobs:
         steps:
         - name: step one
           uses: actions/checkout@v3
+        - name: ls command 
+          run: ls
         - name: step two
           run: env | sort
     job2:
